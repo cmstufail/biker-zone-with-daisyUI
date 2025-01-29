@@ -38,10 +38,10 @@
       };
     </script>
   </head>
-  <body class="font-poppins">
+  <body class="font-poppins overflow-x-hidden">
     <!-- Header Section -->
     <header class="w-11/12 mx-auto">
-      <nav>
+      <!-- <nav>
         <div class="navbar bg-base-100">
           <div class="flex flex-1">
             <div class="dropdown">
@@ -85,6 +85,71 @@
             <a class="btn bg-bike-primary text-white font-bold">Login</a>
           </div>
         </div>
+      </nav> -->
+
+      <nav class="mb-28 md:mb-8">
+        <div class="navbar bg-base-100">
+          <div class="flex flex-1">
+            <a class="font-bold text-xl">Biker Zone</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal relative">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <a
+              class="btn bg-bike-primary text-white font-bold hidden md:inline-flex"
+              >Login</a
+            >
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content rounded-box z-[1] w-28 mt-3 p-2 absolute -left-48 top-0"
+            >
+              <li
+                class="border border-b-gray-600 w-full text-center rounded-lg mb-2"
+              >
+                <a class="justify-center">Home</a>
+              </li>
+              <li
+                class="border border-b-gray-600 w-full text-center rounded-lg mb-2"
+              >
+                <a class="justify-center">Shop</a>
+              </li>
+              <li
+                class="border border-b-gray-600 w-full text-center rounded-lg mb-2"
+              >
+                <a class="justify-center">News</a>
+              </li>
+              <li
+                class="border border-b-gray-600 w-full text-center rounded-lg"
+              >
+                <a class="justify-center">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <!-- Slider/Carousel -->
       <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
@@ -93,9 +158,8 @@
           <div class="flex flex-col lg:flex-row p-12 lg:p-24">
             <!-- Text Content -->
             <div class="space-y-7 flex-1">
-              <h3 class="text-6xl font-bold">
-                Ride-on R15 V4 <br />
-                with Smile
+              <h3 class="text-6xl font-bold leading-tight">
+                Ride-on R15 V4 with Smile
               </h3>
               <p>
                 Amet minim mollit non deserunt ullamco <br />
@@ -125,9 +189,8 @@
           <div class="flex flex-col lg:flex-row p-12 lg:p-24">
             <!-- Text Content -->
             <div class="space-y-7 flex-1">
-              <h3 class="text-6xl font-bold">
-                Ride-on R15 V4 <br />
-                with Smile
+              <h3 class="text-6xl font-bold leading-tight">
+                Ride-on R15 V4 with Smile
               </h3>
               <p>
                 Amet minim mollit non deserunt ullamco <br />
@@ -156,9 +219,8 @@
           <div class="flex flex-col lg:flex-row p-12 lg:p-24">
             <!-- Text Content -->
             <div class="space-y-7 flex-1">
-              <h3 class="text-6xl font-bold">
-                Ride-on R15 V4 <br />
-                with Smile
+              <h3 class="text-6xl font-bold leading-tight">
+                Ride-on R15 V4 with Smile
               </h3>
               <p>
                 Amet minim mollit non deserunt ullamco <br />
@@ -191,7 +253,7 @@
       <section class="w-11/12 mx-auto my-24">
         <!-- Text Content -->
         <div>
-          <h3 class="text-5xl font-bold text-center">
+          <h3 class="text-5xl font-bold text-center leading-tight">
             Fetured Bikes In This Year
           </h3>
           <p class="text-center text-orange-600 pt-3">
@@ -286,16 +348,19 @@
 
       <!-- Happy Clients Section -->
       <section class="w-11/12 mx-auto my-24">
-        <h3 class="text-5xl font-bold text-center mb-12">
-          Happy <span class="text-orange-600">Clients says</span>
+        <h3 class="text-5xl font-bold text-center mb-12 leading-tight">
+          Happy <span class="text-bike-primary">Clients says</span>
         </h3>
         <!-- Cards -->
-        <div class="grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 lg:grid-cols-3 justify-between">
+        <div
+          class="grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 lg:grid-cols-3 justify-between"
+        >
           <!-- Card 1 -->
           <div class="card bg-base-100 shadow-xl border border-gray-300">
             <figure class="px-10 pt-10">
               <img
-                class="w-8/12" src="./images/others/user-1.png"
+                class="w-6/12"
+                src="./images/others/user-1.png"
                 alt="Image"
                 class="rounded-xl"
               />
@@ -336,7 +401,7 @@
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
-              
+
               <h2 class="card-title text-blue-400 text-lg">Regina Miles</h2>
               <h2 class="card-title text-lg">Banker</h2>
             </div>
@@ -345,7 +410,8 @@
           <div class="card bg-base-100 shadow-xl border border-gray-300">
             <figure class="px-10 pt-10">
               <img
-                class="w-8/12" src="./images/others/user-2.png"
+                class="w-6/12"
+                src="./images/others/user-2.png"
                 alt="Image"
                 class="rounded-xl"
               />
@@ -386,7 +452,7 @@
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
-              
+
               <h2 class="card-title text-blue-400 text-lg">Regina Miles</h2>
               <h2 class="card-title text-lg">Banker</h2>
             </div>
@@ -395,7 +461,8 @@
           <div class="card bg-base-100 shadow-xl border border-gray-300">
             <figure class="px-10 pt-10">
               <img
-                class="w-8/12" src="./images/others/user-3.png"
+                class="w-6/12"
+                src="./images/others/user-3.png"
                 alt="Image"
                 class="rounded-xl"
               />
@@ -436,9 +503,88 @@
                   class="mask mask-star-2 bg-orange-400"
                 />
               </div>
-              
+
               <h2 class="card-title text-blue-400 text-lg">Regina Miles</h2>
               <h2 class="card-title text-lg">Banker</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="w-11/12 mx-auto my-24">
+        <h3 class="text-5xl font-bold text-center mb-12 leading-tight">
+          Frequently Asked <span class="text-bike-primary">Questions</span>
+        </h3>
+        <div>
+          <div
+            class="card card-side bg-base-100 shadow-xl flex-col md:flex-row"
+          >
+            <figure class="flex-1">
+              <img class="w-7/12" src="./images/others/faq.png" alt="Movie" />
+            </figure>
+            <div class="card-body flex-1 space-y-5">
+              <!-- FAQ 1 -->
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">
+                  What are the most important things I should know about riding
+                  a bike?
+                </div>
+                <div class="collapse-content bg-base-200">
+                  <p>
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws. Get in the mindset of
+                    “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
+                  </p>
+                </div>
+              </div>
+              <!-- FAQ 2 -->
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  How can I tell if my helmet is old and I need a new one?
+                </div>
+                <div class="collapse-content bg-base-200">
+                  <p>
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws. Get in the mindset of
+                    “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
+                  </p>
+                </div>
+              </div>
+              <!-- FAQ 3 -->
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  My bike has been in storage is it safe to ride?
+                </div>
+                <div class="collapse-content bg-base-200">
+                  <p>
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws. Get in the mindset of
+                    “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
+                  </p>
+                </div>
+              </div>
+              <!-- FAQ 4 -->
+              <div class="collapse collapse-arrow border border-blue-100">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">
+                  What rules should I follow when riding my bike?
+                </div>
+                <div class="collapse-content bg-base-200">
+                  <p>
+                    Safety First! Always obey the rules of the road. Obey all
+                    traffic signals, signs, and laws. Get in the mindset of
+                    “driving” your bike—not just “riding” your bike. This will
+                    help you be a more focused and legally compliant bike rider.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -446,6 +592,30 @@
     </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="footer bg-black text-neutral-content p-10 justify-between px-28">
+      <aside>        
+        <div class="flex gap-7 text-lg mb-3 md:mb-2">
+          <p>Download Now </p>
+        <p>License</p>
+        </div>
+        <ul class="flex flex-wrap gap-6 md:mb-4">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="hidden md:block order-4 md:order-none">© 2020 bike. All rights reserved</p>        
+      </aside>
+      <p class="md:hidden order-4 md:order-none">© 2020 bike. All rights reserved</p>
+      <nav class="order-3 md:order-none">
+        <h6 class="footer-title">Get the App</h6>
+        <div class="grid grid-cols-1 gap-4">
+          <a><img class="w-36" src="./images/others/ios.png" alt=""></a>
+          <a><img class="w-36" src="./images/others/android.png" alt=""></a>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
